@@ -20,15 +20,18 @@
 		$prev = $self.find(".prev");
 		$reset = $self.find(".reset")
 		
+		var hammpus = hej;
 		
  		var methods = {
- 			get_next : function(){
+ 			get_next : function(){
+
  				var $active_selector =  $(settings.children.selector+".active", $self) ;
 				
 				//console.log($active_selector.next(":visible"));
 				
 				if($active_selector.nextAll(':visible').size()){
-					$active_selector.removeClass("active").nextAll(':visible').first().addClass("active");
+					$active_selector.removeClass("active").nextAll(':visible').first().addClass("active");
+
 				} else {
 					$active_selector.removeClass("active");
 					$(settings.children.selector+":visible").first().addClass("active");
