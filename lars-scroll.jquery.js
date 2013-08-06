@@ -24,7 +24,6 @@
 		
  		var methods = {
  			get_next : function(){
-
  				var $active_selector =  $(settings.children.selector+".active", $self) ;
 				
 				//console.log($active_selector.next(":visible"));
